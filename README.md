@@ -3,4 +3,8 @@
 * Yarn
 * React
 * Webpack
+ - uglify
+ - bhtml-webpack-plugin
+ - source maps
+ - webpack-dev-server:
 * Babel
