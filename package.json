@@ -1,0 +1,10 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "James Shi <jshi@live.ca>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.7.1"
+  }
+}
