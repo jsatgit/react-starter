@@ -5,6 +5,11 @@
   "author": "James Shi <jshi@live.ca>",
   "license": "MIT",
   "devDependencies": {
+    "html-webpack-plugin": "^2.30.1",
     "webpack": "^3.7.1"
-  }
+  },
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {}
 }
