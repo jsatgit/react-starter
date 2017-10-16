@@ -7,4 +7,5 @@
  - bhtml-webpack-plugin
  - source maps
  - webpack-dev-server:
+* Eslint
 * Babel

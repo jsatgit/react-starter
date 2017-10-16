@@ -15,11 +15,26 @@ module.exports = {
     })
   ],
   module: {
-    loaders: [
+    rules: [
+      {
+        enforce: 'pre',
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: 'eslint-loader'
+      },
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
-        loader: 'eslint-loader'
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env'],
+            plugins: [
+              require('babel-plugin-transform-object-rest-spread'),
+              require('babel-plugin-transform-class-properties')
+            ]
+          }
+        }
       }
     ]
   },
