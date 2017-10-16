@@ -14,6 +14,15 @@ module.exports = {
       title: 'React App'
     })
   ],
+  module: {
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader'
+      }
+    ]
+  },
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: 'bundle.js'
