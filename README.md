@@ -4,8 +4,8 @@
 * React
 * Webpack
  - uglify
- - bhtml-webpack-plugin
+ - html-webpack-plugin
  - source maps
- - webpack-dev-server:
+ - webpack-dev-server
 * Eslint
 * Babel
