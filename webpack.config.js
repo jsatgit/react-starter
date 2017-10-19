@@ -3,7 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-	entry: './src/index.js',
+	entry: './src/index.jsx',
   devtool: 'cheap-eval-source-map',
   devServer: {
     contentBase: './dist'
@@ -11,7 +11,7 @@ module.exports = {
   plugins: [
     new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({
-      title: 'React App'
+      template: 'index.html'
     })
   ],
   module: {
@@ -28,14 +28,14 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env'],
+            presets: ['env', 'react'],
             plugins: [
               require('babel-plugin-transform-object-rest-spread'),
               require('babel-plugin-transform-class-properties')
             ]
           }
         }
-      }
+      },
     ]
   },
 	output: {
